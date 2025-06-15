@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Olivalia - Aceites de Oliva</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Olivalia - Aceites de Oliva Premium</h1>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1580656018587-d19788bb4963?auto=format&fit=crop&w=400&q=80" alt="Aceite 500ml" />
+      <h2>Aceite de Oliva 500 ml</h2>
+      <p>Precio: $10.00 USD</p>
+      <button data-name="Aceite 500ml" data-price="10">Agregar al carrito</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1572441710283-cf0ee4d3fa20?auto=format&fit=crop&w=400&q=80" alt="Aceite 1 litro" />
+      <h2>Aceite de Oliva 1 litro</h2>
+      <p>Precio: $18.00 USD</p>
+      <button data-name="Aceite 1L" data-price="18">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div id="cart">
+    <h3>Carrito de compras</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: $<span id="total">0</span> USD</strong></p>
+    <button id="checkout-btn" disabled>Pagar con Stripe</button>
+  </div>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+</body>
+</html>
